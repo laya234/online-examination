@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student Sign In</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px; /* Add some spacing below the heading */
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 8px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff8f7a;
+}
+
+/* Additional styles for input fields */
+input[type="email"],
+input[type="password"] {
+    font-size: 16px;
+}
+
+/* Additional styles for form layout */
+form table tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Additional styles for the submit button */
+input[type="submit"] {
+    font-weight: bold;
+}
+
+/* Additional styles for the form container */
+form {
+    margin-top: 50px;
+    border: 2px solid #ccc;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form action="addstudent1.jsp" method="post">
+        <table>
+            <tr><td>Student E-Mail:</td><td><input type="email" name="sname"/></td></tr>
+            <tr><td>Student Password:</td><td><input type="password" name="spassword"/></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Sign in"/></td></tr>
+        </table>
+    </form>
+</body>
+</html>

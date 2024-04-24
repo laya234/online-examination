@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table td {
+            padding: 8px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #ff6f61;
+        }
+
+        input[type="submit"] {
+            background-color: #ff6f61;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+            border-radius: 5px;
+            animation: pulse 1.5s infinite;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff8f7a;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.9); }
+            50% { transform: scale(1); }
+            100% { transform: scale(0.9); }
+        }
+        
+        /* Additional styles */
+        input[type="email"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #999;
+        }
+        
+        input[type="submit"] {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        input[type="submit"]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form action="addadmin.jsp" method="post">
+        <table>
+            <tr><td>Admin E-Mail:</td><td><input type="email" name="aname" placeholder="Enter your email"/></td></tr>
+            <tr><td>Admin Password:</td><td><input type="password" name="apassword" placeholder="Enter your password"/></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Login"/></td></tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exam Instructions</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slideInUp 0.5s ease-in-out;
+    }
+
+    h2 {
+        color: #007bff;
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    p {
+        color: #555;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    ol, ul {
+        color: #555;
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #0056b3;
+    }
+
+    button {
+        float: right;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            transform: translateY(20px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>C Language Exam Instructions</h2>
+    <a href="addstudent-success.jsp"><button>Home</button></a>
+
+    <p>Instructions for the exam:</p>
+    <ol>
+        <li>Read each question carefully before answering.</li>
+        <li>Allocate your time wisely across all sections.</li>
+        <li>Show all your workings for mathematical problems.</li>
+        <li>Provide clear and concise answers to verbal reasoning questions.</li>
+        <li>Check your answers before submitting the paper.</li>
+    </ol>
+
+    <p>Additional instructions:</p>
+    <ul>
+        <li>No external aids or references are permitted.</li>
+        <li>Time limit: 60 minutes.</li>
+    </ul>
+
+    <a href="c_exam.jsp">Click here to start the exam</a>
+
+    <h2>All the Best!</h2>
+</div>
+</body>
+</html>
